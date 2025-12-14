@@ -14,7 +14,7 @@ try:
         cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
         print("Database created successfully")
 
-except Error as e:
+mysql.connector.Error as err:
     print("Error while connecting to MySQL", e)
 
 finally:
